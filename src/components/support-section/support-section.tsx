@@ -1,14 +1,17 @@
-import { HeartHandshake, PaintbrushVertical, Store } from 'lucide-react';
-import { PT_Sans_Caption } from 'next/font/google';
+import { HeartHandshake, PaintbrushVertical, Store } from "lucide-react";
+import { PT_Sans_Caption } from "next/font/google";
+import backgroundSVG from "/background-section-support.svg";
 
 const ptSansCaption = PT_Sans_Caption({
-  subsets: ['latin'],
-  weight: '700',
+  subsets: ["latin"],
+  weight: "700",
 });
 
 export const SupportSection = () => {
   return (
-    <section className="pb-8 mt-8 md:py-10 bg-gray-700">
+    <section className="pb-8 mt-8 md:py-10 bg-cover bg-center bg-no-repeat "
+     style={{ backgroundImage: `url(/background-section-support.svg)` }}
+    >
       <div className="container flex flex-col items-center gap-12">
         <h2
           className={`${ptSansCaption.className} text-balance text-center text-heading-xl text-gray-100`}
