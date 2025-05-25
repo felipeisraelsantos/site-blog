@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Button } from "../ui/button";
-import { ActiveLink } from "../active-link/active-link";
+import { ActiveLink } from "../active-link";
 import { Logo } from "../ui/logo";
 
 export const Header = () => {
