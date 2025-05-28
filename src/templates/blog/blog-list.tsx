@@ -1,17 +1,18 @@
-import { Search } from '@/components/search';
-import { useRouter } from 'next/router';
-import { PostCard } from './components/post-card';
+import { Search } from "@/components/search";
+import { useRouter } from "next/router";
+import { PostCard } from "./components/post-card";
+import { PostGridCard } from "./components/post-grid-card";
 
 export function BlogList() {
   const router = useRouter();
   const query = router.query.q as string;
   const pageTitle = query
     ? `Resultados de busca para "${query}"`
-    : 'Dicas e estratégias para impulsionar seu negócio';
+    : "Dicas e estratégias para impulsionar seu negócio";
 
   return (
     <div className="flex flex-col py-24 flex-grow h-full">
-      <header className="">
+      <header className="pb-14">
         <div className="container space-y-6 flex flex-col items-start justify-between md:flex-row md:items-end lg:items-end">
           <div className="flex flex-col gap-4 md:px-0">
             {/* TAG */}
@@ -30,17 +31,19 @@ export function BlogList() {
       </header>
 
       {/* Listagem de posts */}
-      <PostCard
-        title='teste'
-        description='lorem'
-        date='20/12/2024'
-        image='/assets/primeiro-post.png'
-        slug='Teste de slug'
-        author={{
-            avatar: '/customer-01.svg',
-            name: 'Nome teste'
-        }}
-      />
+      <PostGridCard>
+        <PostCard
+          title="teste"
+          description="lorem"
+          date="20/12/2024"
+          image="/assets/primeiro-post.png"
+          slug="Teste de slug"
+          author={{
+            avatar: "/customer-01.svg",
+            name: "Nome teste",
+          }}
+        />
+      </PostGridCard>
     </div>
   );
 }
