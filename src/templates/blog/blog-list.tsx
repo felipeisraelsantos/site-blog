@@ -30,7 +30,17 @@ export function BlogList() {
       </header>
 
       {/* Listagem de posts */}
-      <PostCard />
+      <PostCard
+        title='teste'
+        description='lorem'
+        date='20/12/2024'
+        image='/assets/primeiro-post.png'
+        slug='Teste de slug'
+        author={{
+            avatar: '/customer-01.svg',
+            name: 'Nome teste'
+        }}
+      />
     </div>
   );
 }
