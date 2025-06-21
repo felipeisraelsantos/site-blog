@@ -41,4 +41,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 
 ### Figma (projects)
 
-https://www.figma.com/design/ZYdq4ERxtRodDFK43LBzf7/Landing-Page-e-Blog--Community-?node-id=3-376&p=f&t=VXuIlEMesTVHWcoO-0
+[Link do layout do Projeto](
+https://www.figma.com/design/ZYdq4ERxtRodDFK43LBzf7/Landing-Page-e-Blog--Community-?node-id=3-376&p=f&t=VXuIlEMesTVHWcoO-0)
